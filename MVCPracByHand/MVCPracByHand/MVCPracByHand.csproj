@@ -16,7 +16,7 @@
     <RootNamespace>MVCPracByHand</RootNamespace>
     <AssemblyName>MVCPracByHand</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -128,6 +128,14 @@
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\ie8.css" />
     <Content Include="assets\css\ie9.css" />
+    <Content Include="assets\css\images\0tire.jpg" />
+    <Content Include="assets\css\images\0tire2.jpg" />
+    <Content Include="assets\css\images\0tire3.jpg" />
+    <Content Include="assets\css\images\0tire4.jpg" />
+    <Content Include="assets\css\images\0tire5.jpg" />
+    <Content Include="assets\css\images\0tire6.jpg" />
+    <Content Include="assets\css\images\0tire7.jpg" />
+    <Content Include="assets\css\images\0tire8.jpg" />
     <Content Include="assets\css\images\arrow.svg" />
     <Content Include="assets\css\images\bars.svg" />
     <Content Include="assets\css\images\close.svg" />
@@ -176,6 +184,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Starter.cs" />
+    <Compile Include="Models\Tire.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -219,7 +228,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>20916</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:20916/</IISUrl>
+          <IISUrl>http://localhost/MVCPracByHandTires</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

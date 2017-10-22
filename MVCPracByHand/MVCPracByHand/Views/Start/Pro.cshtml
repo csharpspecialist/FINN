@@ -24,9 +24,9 @@
 
             <!-- Logo -->
             <div id="logo">
-                <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-                <h1 id="title">Bruce Banner</h1>
-                <p>Smart Person</p>
+                @*<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>*@
+                <h1 id="title">  Generic Tire And Wheel </h1>
+                <h3>Used Tire Outlet</h3>
             </div>
 
             <!-- Nav -->
@@ -45,10 +45,13 @@
 
                 -->
                 <ul>
-                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                    <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                    <li><a href="@Url.Action("Pro", "Start")" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">  Pro Page  </span></a></li>
+                    <li><a href="@Url.Action("Go", "Start")" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th"> Go Page  </span></a></li>
+                    <li><a href="@Url.Action("Index", "Start")" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">  Nice Page  </span></a></li>
+                    <li><a href="@Url.Action("What", "Start")" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope"> What Page </span></a></li>
+                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-th"> About  </span></a></li>
+                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-user">  Contact Us </span></a></li>
+
                 </ul>
             </nav>
 
@@ -87,11 +90,11 @@
                     </p>
                 </header>
 
-                <footer>
+                @*<footer>
                     <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
                     <a href="@Url.Action("What", "Start")" class="button scrolly">Alla Kazam</a>
                     <a href="#portfolio" class="button scrolly">Presto</a>
-                </footer>
+                </footer>*@
 
             </div>
         </section>
@@ -163,9 +166,17 @@
         <section id="about" class="three">
             <div class="container">
 
-                <header>
+                @*<header>
                     <h2>About Me</h2>
-                </header>
+                </header>*@
+
+                <footer>
+                    <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+                    <a href="@Url.Action("What", "Start")" class="button scrolly">Alla Kazam</a>
+                    <a href="#portfolio" class="button scrolly">Presto</a>
+                </footer>
+
+
 
                 <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 

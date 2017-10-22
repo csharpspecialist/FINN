@@ -9,7 +9,7 @@ namespace MVCPracByHand.Models
 {
     public class Starter
     {
-
+        //tire demo setup
         public int ID { get; set; }
         public string Make { get; set; }
         public int Year { get; set; }
@@ -21,7 +21,7 @@ namespace MVCPracByHand.Models
     public class StarterDBContext : DbContext
     {
 
-        public DbSet<Starter> Cars { get; set; }
+        public DbSet<Starter> Wheels { get; set; }
 
 
     }
