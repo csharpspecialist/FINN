@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MVCAttempt1.Models.Club>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClubName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfBars)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfEntrances)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfEmployees)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClubName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfBars)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfEntrances)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfEmployees)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Capacity)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ClubID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ClubID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ClubID })
+        </td>
+    </tr>
+}
+
+</table>

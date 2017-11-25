@@ -1,0 +1,64 @@
+﻿@model MVCRubberShop.Models.Tires
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Tires</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TireWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TireWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sidewall)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sidewall)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RimDiameter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RimDiameter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MSRP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MSRP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

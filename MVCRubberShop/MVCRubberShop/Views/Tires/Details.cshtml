@@ -1,0 +1,58 @@
+﻿@model MVCRubberShop.Models.Tires
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tires</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TireWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TireWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sidewall)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sidewall)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RimDiameter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RimDiameter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MSRP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MSRP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TiresID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

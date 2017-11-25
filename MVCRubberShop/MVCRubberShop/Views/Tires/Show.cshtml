@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MVCRubberShop.Models.Tires>
+
+@{
+    ViewBag.Title = "Tire Stock List Page";
+}
+
+<h2>Tires In Stock</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TireWidth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sidewall)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RimDiameter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MSRP)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.NumberInStock)
+        </th>*@
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TireWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sidewall)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RimDiameter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MSRP)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.NumberInStock)
+            </td>*@
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TiresID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TiresID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TiresID })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+

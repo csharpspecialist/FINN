@@ -1,0 +1,66 @@
+﻿@model MVCAttempt1.Models.Club
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Club</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClubName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClubName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfBars)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfBars)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfEntrances)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfEntrances)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfEmployees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfEmployees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClubID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
