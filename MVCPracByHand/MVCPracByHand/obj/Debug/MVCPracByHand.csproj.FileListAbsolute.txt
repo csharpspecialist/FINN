@@ -97,3 +97,4 @@ D:\wor\Finn\MVCPracByHand\MVCPracByHand\bin\System.Web.Mvc.xml
 D:\wor\Finn\MVCPracByHand\MVCPracByHand\obj\Debug\MVCPracByHand.csprojResolveAssemblyReference.cache
 D:\wor\Finn\MVCPracByHand\MVCPracByHand\obj\Debug\MVCPracByHand.dll
 D:\wor\Finn\MVCPracByHand\MVCPracByHand\obj\Debug\MVCPracByHand.pdb
+D:\wor\Finn\MVCPracByHand\MVCPracByHand\obj\Debug\MVCPracByHand.csproj.CoreCompileInputs.cache

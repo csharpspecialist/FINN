@@ -48,3 +48,4 @@ D:\wor\Finn\MVCAttempt1\MVCAttempt1\bin\System.Web.Mvc.xml
 D:\wor\Finn\MVCAttempt1\MVCAttempt1\obj\Debug\MVCAttempt1.csprojResolveAssemblyReference.cache
 D:\wor\Finn\MVCAttempt1\MVCAttempt1\obj\Debug\MVCAttempt1.dll
 D:\wor\Finn\MVCAttempt1\MVCAttempt1\obj\Debug\MVCAttempt1.pdb
+D:\wor\Finn\MVCAttempt1\MVCAttempt1\obj\Debug\MVCAttempt1.csproj.CoreCompileInputs.cache

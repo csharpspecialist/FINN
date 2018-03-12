@@ -1,0 +1,18 @@
+
+<p>
+    employee-list works yess it does
+  </p>
+
+  
+<table class="table table-sm table-hover">
+<tr *ngFor="let employee of employeeService.employeeList" >
+    <td>{{employee.FirstName}} - {{employee.LastName}} </td>
+
+  <td> {{employee.EmployeeCode}} </td>
+
+  <td> <a class="btn" (click)="updateRec(employee)"> <i class="fa fa-pencil-square-o"></i>  </a> </td>
+
+  <td> <a class="btn text-danger" (click)="delEmp(employee.EmployeeID)"> <i class="fa fa-trash-o"></i>  </a> </td>
+</tr>
+
+</table>
